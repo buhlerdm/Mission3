@@ -56,6 +56,7 @@
 
     /*document.getElementById("letterGrade").innerHTML = letterGrade;*/
 
+  
     alert('Your Grade is: ' + Grade + ' ' + letterGrade);
 
     
