@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{  ViewData["Title"] = "Calculator";
+}
+
+@model CalculatorModel
+
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Grade Calculator</h1>
+            <p class="col-lg-10 fs-4">Calculate your grade with the following grade calculator. Keep in mind, this calculator rounds to the nearest whole number.</p>
+
+            <!--
+                <h3>Your final Grade is: <span id="Grade"></span> <span id="letterGrade"></span></h3>
+                -->
+            
+            
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form method="post" class="p-4 p-md-5 border rounded-3 bg-light">
+                <div class="form-floating mb-3">
+                    <input asp-for="Assignments" id="Assignments" class="form-control" />
+                    <label class="form-label">Assignments:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Group" id="Group" class="form-control" />
+                    <label class="form-label">Group Projects:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Quizzes" id="Quizzes" class="form-control" />
+                    <label class="form-label">Quizzes:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="Exams" id="Exams" class="form-control" />
+                    <label class="form-label">Exams:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input asp-for="INTEX" id="INTEX" class="form-control" />
+                    <label class="form-label">INTEX:</label>
+                </div>
+                <div class="align-items-center">
+                    <input id="gradeSend" type="submit" value="Calculate Score" class="btn btn-primary" />
+
+                </div>
+                <div asp-validation-summary="All"></div>
+            </form>
+        </div>
+    </div>
+</div>

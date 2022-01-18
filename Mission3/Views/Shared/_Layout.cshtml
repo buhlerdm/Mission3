@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+
+    <!--Icon is made here, it is a reference to my favorite show, Naruto.-->
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/itachi-alt.ico" />
+
+
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!--I made changes to the list and I also made formatting changes to the paragraph about what I want to gain from this class.-->
+    <link href="~/css/default.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="FirstPage" asp-action="Index">Home</a>
+        <a asp-controller="FirstPage" asp-action="Calculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/js/gradeCalc.js"></script>
+</body>
+</html>
